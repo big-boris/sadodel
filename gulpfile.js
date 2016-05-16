@@ -41,7 +41,7 @@ gulp.task('img', function() {
 
 gulp.task('watch', function() {
   gulp.watch('builds/dev/js/**/*.js', ['js']);
-  gulp.watch('builds/dev/sass/**/*.scss', ['sass']);
+  gulp.watch('builds/dev/sass/**/*.sass', ['sass']);
   gulp.watch('builds/dev/**/*.html', ['html']);
   gulp.watch('builds/dev/img/**/*', ['img']);
   gulp.watch('builds/dev/fonts/**/*', ['fonts']);
