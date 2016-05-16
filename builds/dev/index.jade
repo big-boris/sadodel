@@ -1,0 +1,522 @@
+-var pageTitle = "Кафе Сиеста пицца Нахабино доставка еды заказать"
+
+doctype html
+html(lang="ru")
+head
+    meta(charset="UTF-8")
+    meta(name='yandex-verification' content='672bbf7ed8b0d929')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='description' content='Заказать в кафе Сиеста пицца Нахабино доставка еды заказать')
+    title= pageTitle
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="libs/bootstrap/bootstrap.css")
+    link(rel="stylesheet" href="libs/fotorama/fotorama.css")
+    //[if lt IE 9]>
+        <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script> <![endif]
+body
+    .container
+        .row.text-center.info
+            .col-md-3
+                .logo
+                    img(src='img/logo_siesta.jpg' alt='Кафе Сиеста - доставляем бесплатно' width='235px')
+            .col-md-5
+                .header__text Бесплатная доставка <br> пиццы в Нахабино
+            .col-md-4
+                .phone__head 8 926 865-77-50
+                .opening__hours Часы работы: с 12:00 до 23:00
+        .row.text-center
+            .menu
+                .menu__item
+                    a(href='javascript:void(0);') Пицца
+                .menu__item
+                    a(href='/rolly.html') Роллы
+                .menu__item
+                    a(href='javascript:void(0);' onclick="myScrollTo('maps');") Контакты
+        .row.slider.hidden-xs
+            .col-md-12
+                .fotorama(data-width="100%" data-height='520px' data-nav="false" transitionduration='100' data-autoplay="3000" data-stopautoplayontouch="false" data-fit="cover" data-max-width="100%")
+                    img(src='img/pizza_stock01.jpg' alt='Типа картинка слайдера' width='100%')
+                    img(src='img/pizza_stock02.jpg' alt='Типа картинка слайдера' width='100%')
+                    img(src='img/pizza_stock03.jpg' alt='Типа картинка слайдера' width='100%')
+                    img(src='img/pizza_stock04.jpg' alt='Типа картинка слайдера' width='100%')
+            //- pizza first row
+        .row
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_siesta.jpg' alt='Пицца Сиеста' width='100%')
+                    .product__name Сиеста
+                    .product__contains
+                        | Соус сливочный, сыр Моцарелла, буженина, пепперони, курица, перец, томаты, лук, маслины, бочковые огурцы, халапеньо
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 619 р
+                            li 41 см - 659 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_pepperoni.jpg' alt='Пицца Пепперони' width='100%')
+                    .product__name Пепперони
+                    .product__contains
+                        | Соус, сыр Моцарелла, пепперони, томаты
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 519 р
+                            li 41 см - 599 р
+            .clearfix.visible-sm-block
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_4cheese.jpg' alt='Пицца Четыре сыра' width='100%')
+                    .product__name Четыре сыра
+                    .product__contains
+                        | Соус сливочный, сыр Моцарелла, пармезан, чеддер, дорблю
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 529 р
+                            li 41 см - 579 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_cezar.jpg' alt='Пицца Цезарь' width='100%')
+                    .product__name Цезарь
+                    .product__contains
+                        | Соус Цезарь, сыр Моцарелла, салат айсберг, курица, черри, пармезан
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 549 р
+                            li 41 см - 589 р
+            //- pizza second row
+        .row
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_syrostrov.jpg' alt='Пицца Сырный остров' width='100%')
+                    .product__name Сырный остров
+                    .product__contains
+                        | Соус сливочный, сыр Моцарелла, сыр фетаки, пармезан, чеддер, базилик, руколла
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 539 р
+                            li 41 см - 589 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_mexico.jpg' alt='Пицца Мексиканская' width='100%')
+                    .product__name Мексиканская
+                    .product__contains
+                        | Соус, сыр Моцарелла, ветчина, бекон, лук, красная фасоль, перец болгарский, маслины, халапеньо
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 509 р
+                            li 41 см - 549 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_tropicana.jpg' alt='Пицца Тропикано' width='100%')
+                    .product__name Тропикано
+                    .product__contains
+                        | Соус, сыр Моцарелла, чеддер, курица, перец острый, ананас
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 529 р
+                            li 41 см - 579 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_italiano.jpg' alt='Пицца Итальяно' width='100%')
+                    .product__name Итальяно
+                    .product__contains
+                        | Соус, сыр Моцарелла, болоньезе, говядина, томаты, перец болгарский
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 519 р
+                            li 41 см - 569 р
+            //- pizza third row
+        .row
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_pikanta.jpg' alt='Пицца Пикантная' width='100%')
+                    .product__name Пикантная
+                    .product__contains
+                        | Соус, сыр Моцарела, грибы, пепперони, перец сладкий, перец острый, чеснок, зелень
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 499 р
+                            li 41 см - 549 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_diablo.jpg' alt='Пицца Диабло' width='100%')
+                    .product__name Диабло
+                    .product__contains
+                        | Соус сливочный, сыр Моцарелла, пепперони, перец болгарский, лук, халапеньо
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 549 р
+                            li 41 см - 589 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_kolbasmix.jpg' alt='Пицца Колбасный микс' width='100%')
+                    .product__name Колбасный микс
+                    .product__contains
+                        | Соус, сыр Моцарелла, салями, ветчина, сосиски, бекон, буженина, говядина
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 579 р
+                            li 41 см - 639 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_otshefa.jpg' alt='Пицца От шефа' width='100%')
+                    .product__name От шефа
+                    .product__contains
+                        | Соус чесночный, сыр Моцарелла, говядина, курица, лук, томаты, перец острый
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 589 р
+                            li 41 см - 649 р
+            //- pizza fourth row
+        .row
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_julette.jpg' alt='Пицца Жульетта' width='100%')
+                    .product__name Жульетта
+                    .product__contains
+                        | Соус сливочный, сыр Моцарелла, грибы
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 529 р
+                            li 41 см - 579 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_primavera.jpg' alt='Пицца Примавера' width='100%')
+                    .product__name Примавера
+                    .product__contains
+                        | Соус сливочный, сыр Моцарелла, курица, грибы, кукуруза
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 489 р
+                            li 41 см - 549 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_bogatyrskaya.jpg' alt='Пицца Богатырская' width='100%')
+                    .product__name Богатырская
+                    .product__contains
+                        | Соус, сыр Моцарелла, говядина, бекон, ветчина, перец сладкий, томаты
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 609 р
+                            li 41 см - 649 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_moskovskaya.jpg' alt='Пицца Московская' width='100%')
+                    .product__name Московская
+                    .product__contains
+                        | Соус, сыр Моцарелла, курица, говядина, грибы, черри, маслины
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 499 р
+                            li 41 см - 559 р
+            //- pizza fifth row
+        .row
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_4vkusa.jpg' alt='Пицца Четыре вкуса' width='100%')
+                    .product__name Четыре вкуса
+                    .product__contains
+                        | Соус сливочный, сыр Моцарелла, ветчина, пепперони, грибы, помидоры, укроп
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 509 р
+                            li 41 см - 579 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_margo.jpg' alt='Пицца Маргарита' width='100%')
+                    .product__name Маргарита
+                    .product__contains
+                        | Соус, сыр Моцарелла, томаты
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 379 р
+                            li 41 см - 409 р
+            .clearfix.visible-sm-block
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_gavaiskaya.jpg' alt='Пицца Гавайская' width='100%')
+                    .product__name Гавайская
+                    .product__contains
+                        | Соус, сыр Моцарелла, ветчина, ананас
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 469 р
+                            li 41 см - 519 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_vegetar.jpg' alt='Пицца Вегетарианская' width='100%')
+                    .product__name Вегетарианская
+                    .product__contains
+                        | Соус, сыр Моцарелла, грибы, лук, маслины, перец болгарский, томаты, огурцы соленые
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 469 р
+                            li 41 см - 519 р
+            //- pizza sixth row
+        .row
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_salyami.jpg' alt='Пицца Салями' width='100%')
+                    .product__name Салями
+                    .product__contains
+                        | Соус, сыр Моцарелла, салями, томаты, лук
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 509 р
+                            li 41 см - 559 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_rome.jpg' alt='Пицца Роме' width='100%')
+                    .product__name Роме
+                    .product__contains
+                        | Соус, сыр Моцарелла, ветчина, салями, томаты, грибы, огурцы бочковые, маслины
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 659 р
+                            li 41 см - 689 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_siciliano.jpg' alt='Пицца Сицилиано' width='100%')
+                    .product__name Сицилиано
+                    .product__contains
+                        | Соус чесночный, сыр Моцарелла, пепперони, бекон, лук
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 499 р
+                            li 41 см - 539 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_fruttimare.jpg' alt='Пицца Frutti di Mare' width='100%')
+                    .product__name Frutti di Mare
+                    .product__contains
+                        | Соус, сыр Моцарелла, морской коктейль, семга, маслины
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 589 р
+                            li 41 см - 639 р
+            //- pizza seventh row
+        .row
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pizza/pz_quatrostag.jpg' alt='Пицца Quatro Stagione' width='100%')
+                    .product__name Quatro Stagione
+                    .product__contains
+                        | Соус, сыр Моцарелла, ветчина, бекон, салями, буженина, грибы, перец болгарский, огурцы бочковые
+                    .product__price
+                        ul.product__price__option
+                            li 33 см - 609 р
+                            li 41 см - 649 р
+            //- pasta first row
+        .row
+            .container
+                .row.text-center
+                    .section__title Пасты
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pasta/spag_cherribaz.jpg' alt='Спагетти черри-базилик' width='100%')
+                    .product__name Спагетти черри-базилик
+                    .product__price
+                        ul.product__price__option
+                            li 250 гр - 280 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pasta/spag_karbonara.jpg' alt='Спагетти Карбонара' width='100%')
+                    .product__name Спагетти Карбонара
+                    .product__price
+                        ul.product__price__option
+                            li 250 гр - 320 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pasta/spag_talliasemga.jpg' alt='Спагетти Тальятелле (семга, брокколи)' width='100%')
+                    .product__name Тальятелле (семга, брокколи)
+                    .product__price
+                        ul.product__price__option
+                            li 250 гр - 360 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/pasta/spag_talliamoreprod.jpg' alt='Спагетти Тальятелле (морепродукты)' width='100%')
+                    .product__name Тальятелле (морепродукты)
+                    .product__price
+                        ul.product__price__option
+                            li 250 гр - 370 р
+            //- zakuski first row
+        .row
+            .container
+                .row.text-center
+                    .section__title Горячие закуски
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/zakuski/zak_naggets.jpg' alt='Куриные наггетсы' width='100%')
+                    .product__name Куриные наггетсы
+                    .product__price
+                        ul.product__price__option
+                            li 6 шт - 269 р
+                            li 9 шт - 325 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/zakuski/zak_kurkrylia.jpg' alt='Крылышки куриные' width='100%')
+                    .product__name Крылышки куриные
+                    .product__price
+                        ul.product__price__option
+                            li 8 шт - 425 р
+            .clearfix.visible-sm-block
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/zakuski/zak_kartofderevnya.jpg' alt='Картофель по-деревенски' width='100%')
+                    .product__name Картофель по-деревенски
+                    .product__price
+                        ul.product__price__option
+                            li 150 гр - 175 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/zakuski/zak_frikartof.jpg' alt='Картофель фри' width='100%')
+                    .product__name Картофель фри
+                    .product__price
+                        ul.product__price__option
+                            li 150 гр - 175 р
+            //- zakuski second row
+        .row
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/zakuski/zak_lukolca.jpg' alt='Луковые кольца' width='100%')
+                    .product__name Луковые кольца
+                    .product__price
+                        ul.product__price__option
+                            li 150 гр - 185 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/zakuski/zak_kalmarokolca.jpg' alt='Кольца кальмара' width='100%')
+                    .product__name Кольца кальмара
+                    .product__price
+                        ul.product__price__option
+                            li 150 гр - 185 р
+            //- salaty first row
+        .row
+            .container
+                .row.text-center
+                    .section__title Салаты
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/salat/salat_cezarkur.jpg' alt='Цезарь с курицей' width='100%')
+                    .product__name Цезарь с курицей
+                    .product__price
+                        ul.product__price__option
+                            li 300 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/salat/salat_cezarkrev.jpg' alt='Цезарь с креветками' width='100%')
+                    .product__name Цезарь с креветками
+                    .product__price
+                        ul.product__price__option
+                            li 400 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/salat/salat_capreze.jpg' alt='Капрезе' width='100%')
+                    .product__name Капрезе
+                    .product__price
+                        ul.product__price__option
+                            li 350 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/salat/salat_greches.jpg' alt='Греческий А-ля греко' width='100%')
+                    .product__name Греческий «А-ля греко»
+                    .product__price
+                        ul.product__price__option
+                            li 280 р
+            //- napitki first row
+        .row
+            .container
+                .row.text-center
+                    .section__title Напитки
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/napitki/nap_coca.jpg' alt='Coca-cola' width='100%')
+                    .product__name Coca-cola
+                    .product__price
+                        ul.product__price__option
+                            li 0,5 л - 99 р
+                            li 1 л - 119 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/napitki/nap_coca0.jpg' alt='Coca-cola zero' width='100%')
+                    .product__name Coca-cola zero
+                    .product__price
+                        ul.product__price__option
+                            li 0,5 л - 99 р
+                            li 1 л - 119 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/napitki/nap_fanta.jpg' alt='Fanta' width='100%')
+                    .product__name Fanta
+                    .product__price
+                        ul.product__price__option
+                            li 0,5 л - 99 р
+                            li 1 л - 119 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/napitki/nap_sprite.jpg' alt='Sprite' width='100%')
+                    .product__name Sprite
+                    .product__price
+                        ul.product__price__option
+                            li 0,5 л - 99 р
+                            li 1 л - 119 р
+            //- napitki second row
+        .row
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/napitki/nap_bonaqua.jpg' alt='Bon Aqua' width='100%')
+                    .product__name Bon Aqua газ./негаз.
+                    .product__price
+                        ul.product__price__option
+                            li 0,5 л - 99 р
+                            li 1 л - 109 р
+            .col-sm-6.col-md-3
+                .product
+                    img(src='img/napitki/nap_nestea.jpg' alt='Холодный чай Nestea' width='100%')
+                    .product__name Холодный чай Nestea
+                    .product__price
+                        ul.product__price__option
+                            li 0,5 л - 119 р
+        .row.maps
+            script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=r8vjUC7gKaTP9hxyf_Ok9mpF9u0kLvl9&width=100%&height=470&lang=ru_RU&sourceType=constructor&scroll=true")
+        .row.info
+            .col-md-3.text-center
+                .logo
+                    img(src='img/logo_siesta.jpg' alt='Кафе Сиеста - доставляем бесплатно' width='235px')
+            .col-md-5.text-center
+                .footer__text Сиеста доставляет бесплатно!
+            .col-md-4.text-left
+                .phone__footer 8 926 865-77-50
+                .address Нахабино, Красноармейская ул., 61а
+    script(src="libs/jquery/jquery.min.js")
+    script(src="libs/bootstrap/bootstrap.min.js")
+    script(src="libs/fotorama/fotorama.js")
+    script(src="js/app.js")
+
+    // Yandex.Metrika counter
+    //- script(type='text/javascript').
+    //-   (function (d, w, c) {
+    //-   (w[c] = w[c] || []).push(function() {
+    //-   try {
+    //-   w.yaCounter36895210 = new Ya.Metrika({
+    //-   id:36895210,
+    //-   clickmap:true,
+    //-   trackLinks:true,
+    //-   accurateTrackBounce:true
+    //-   });
+    //-   } catch(e) { }
+    //-   });
+    //-   var n = d.getElementsByTagName("script")[0],
+    //-   s = d.createElement("script"),
+    //-   f = function () { n.parentNode.insertBefore(s, n); };
+    //-   s.type = "text/javascript";
+    //-   s.async = true;
+    //-   s.src = "https://mc.yandex.ru/metrika/watch.js";
+    //-   if (w.opera == "[object Opera]") {
+    //-   d.addEventListener("DOMContentLoaded", f, false);
+    //-   } else { f(); }
+    //-   })(document, window, "yandex_metrika_callbacks");
+    //- noscript
+    //-   div
+    //-     img(src='https://mc.yandex.ru/watch/36895210', style='position:absolute; left:-9999px;', alt='')
+    // /Yandex.Metrika counter
