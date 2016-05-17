@@ -738,6 +738,11 @@ address {
     width: 740px;
   }
 }
+/*@media (min-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}*/
 @media (min-width: 1400px) {
   .container {
     width: 1380px;
