@@ -2,7 +2,6 @@
 
 .s__main
     background: url('../img/bg_hatch-dark.jpg') repeat
-    // max-width: 100%
     height: 100%
     padding-bottom: 75px
     color: $s_main-text
@@ -30,7 +29,6 @@
 .s__frm__agronom
     background: url('../img/bg_frm_agronom.jpg') center no-repeat
     background-size: cover
-    // max-width: 100%
     height: 100%
     padding-bottom: 136px
     &-icoqual
@@ -39,9 +37,13 @@
         margin-top: 33px
 
 .frm__agronom
-    width: 426px
-    height: 600px
+    // width: 426px
+    // height: 600px
+    width: 80%
+    display: block
+    height: 100%
     margin-top: 142px
+    margin-left: auto
     background-color: rgba(55, 41, 34, 0.92)
     padding: 35px
     &__title
@@ -52,8 +54,21 @@
     &__ico
         margin-bottom: 20px
 
+@media (max-width: 768px)
+    .frm__agronom
+        width: 70%
+@media screen and (min-width: 320px) and (max-width: 767px)
+    .frm__agronom
+        width: 95%
+    .frm__agronom__title
+        font-size: 32px
+@media (max-width: 320px)
+    .frm__agronom__title
+        font-size: 24px
+
 .frm__agronom__input
-    width: 351px
+    // width: 351px
+    width: 100%
     height: 68px
     margin: 15px 0px
     font-family: 'open_sans-semibold'
@@ -82,7 +97,8 @@
         background-position: 15px 17px
 
 .frm__agronom__input-submit
-    width: 351px
+    // width: 351px
+    width: 100%
     height: 68px
     font-family: 'open_sans-semibold'
     font-size: 28px
@@ -106,7 +122,6 @@
 
 .s__tarifs
     background: url('../img/bg_hatch-light.jpg') repeat
-    // max-width: 100%
     height: 100%
     padding: 50px 0px 75px
     &__title
@@ -156,7 +171,6 @@
 
 .s__service
     background-color: #F5FAF5
-    // max-width: 100%
     height: 100%
     padding: 75px 0px
     &-title
@@ -205,7 +219,6 @@
     padding: 40px 0px
 
 .frm__present__input
-    // width: 351px
     height: 68px
     margin: 20px 0px
     font-family: 'open_sans-semibold'
@@ -234,7 +247,6 @@
         background-position: 15px 17px
 
 .frm__present__input-submit
-    // width: 100%
     height: 68px
     margin: 20px 0px
     font-family: 'open_sans-bold'
@@ -291,10 +303,21 @@
     font-size: 16px
     color: $white
 
+@media (max-width: 320px)
+    .s__footer__left__logo, .s__footer__left__title,
+    .s__footer__left__phone, .s__footer__left__mail,
+    .s__footer__left__social-item:first-child
+        margin-left: 15px
+
 @media (max-width: 768px)
-    .s__footer__devstudio, .s__footer__copyr
+    .s__footer__devstudio
+        margin-left: 15px
+
+@media screen and (min-width: 320px) and (max-width: 767px)
+    .s__footer__copyr
         margin-left: 15px
         margin-top: 14px
+
 @media (max-width: 1024px)
     .s__usluga-title
         margin-left: 16px

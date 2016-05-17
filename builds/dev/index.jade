@@ -40,11 +40,11 @@ body
     .row.s__frm__agronom
         .container
             .row
-                .s__frm__agronom-icoqual.col-md-2
+                //- .container
+                .col-md-2.hidden-sm.hidden-xs.s__frm__agronom-icoqual
                     img(src='img/mark_quality.png' alt='Гарантия качества')
-                .s__frm__agronom-icopromo.col-md-3
+                .col-md-3.hidden-sm.hidden-xs.s__frm__agronom-icopromo
                     img(src='img/promo_month.png' alt='Месяц в подарок')
-                //- .col-md-6.hidden-sm
                 .col-md-7
                     form.frm__agronom(action="")
                         .frm__agronom__ico.text-center
@@ -105,9 +105,9 @@ body
                         .s__service-text.text-left Необходимые для поддержания сада или парка в здоровом, ухоженном состоянии. Вы можете заказать в нашей организации, которая предоставляет полный спектр услуг по уходу за садовыми и парковыми территориями. В каждом конкретном случае мы разрабатываем индивидуальный календарный план мероприятий по уходу, основываясь на возрасте насаждений, месторасположении, механического состава почвы, особенностей полива и многих других факторов влияющих на жизнь растений. Уход за садами и парками, наша компания, производит современными инструментами с учетом всех особенностей этой работы.
             .row.s__usluga
                 .container
-                    .col-md-5
-                        img.s__usluga__img(src='img/rasteniya.jpg' alt='Уход за растениями')
-                    .col-md-7
+                    .col-md-5.col-sm-12.col-xs-12
+                        img.s__usluga__img.img-responsive(src='img/rasteniya.jpg' alt='Уход за растениями')
+                    .col-md-7.col-sm-12.col-xs-12
                         .s__usluga-title Уход за растениями
                         p.s__usluga-text
                             | Обработка от вредителей
@@ -129,9 +129,9 @@ body
                             span &nbsp;— 270 руб. /  1 круг
             .row
                 .container
-                    .col-md-5
-                        img.s__usluga__img(src='img/gazony.jpg' alt='Уход за газоном')
-                    .col-md-7
+                    .col-md-5.col-sm-12.col-xs-12
+                        img.s__usluga__img.img-responsive(src='img/gazony.jpg' alt='Уход за газоном')
+                    .col-md-7.col-sm-12.col-xs-12
                         .s__usluga-title Уход за газоном
                         p.s__usluga-text
                             | Стрижка
