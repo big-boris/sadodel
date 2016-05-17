@@ -38,12 +38,12 @@ body
     .row.s__frm__agronom
         .container
             .row
-                .s__frm__agronom-icoqual.col-md-1.col-sm-2
+                .s__frm__agronom-icoqual.col-md-2
                     img(src='img/mark_quality.png' alt='Гарантия качества')
-                .s__frm__agronom-icopromo.col-md-1.col-sm-3
+                .s__frm__agronom-icopromo.col-md-3
                     img(src='img/promo_month.png' alt='Месяц в подарок')
-                .col-md-6.hidden-sm
-                .col-md-4.col-sm-7
+                //- .col-md-6.hidden-sm
+                .col-md-7
                     form.frm__agronom(action="")
                         .frm__agronom__ico.text-center
                             img(src='img/ico/ico_form.png' alt='Садодел - заказать выезд агронома')
@@ -102,7 +102,7 @@ body
                         .s__service-title.text-center Услуги и стоимость
                         .s__service-text.text-left Необходимые для поддержания сада или парка в здоровом, ухоженном состоянии. Вы можете заказать в нашей организации, которая предоставляет полный спектр услуг по уходу за садовыми и парковыми территориями. В каждом конкретном случае мы разрабатываем индивидуальный календарный план мероприятий по уходу, основываясь на возрасте насаждений, месторасположении, механического состава почвы, особенностей полива и многих других факторов влияющих на жизнь растений. Уход за садами и парками, наша компания, производит современными инструментами с учетом всех особенностей этой работы.
             .row.s__usluga
-                .col-md-5.text-right
+                .col-md-5
                     img(src='img/rasteniya.jpg' alt='Уход за растениями')
                 .col-md-7
                     .s__usluga-title Уход за растениями
@@ -152,7 +152,10 @@ body
                     .s__present__ico
                         img(src='img/ico/ico_certif.png' alt='Предложение в подарок')
                     .s__present__text При заключении договора на ежемесячное обслуживание садового участка
-                    .s__present__proposal Первый месяц обслуживания в подарок
+                    .s__present__proposal
+                        | Первый месяц обслуживания
+                        br
+                        | в подарок
             .row.s__present__form
                     form.frm__present
                         .col-md-4.col-sm-12
