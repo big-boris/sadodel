@@ -185,6 +185,7 @@
     span
         font-family: 'open_sans-semibold'
 
+
 .s__present
     height: 100%
     padding: 60px 0px
@@ -253,14 +254,6 @@
     background-color: #182B22
     color: #76A76D
     padding: 60px 0px 40px
-    &__devstudio
-        font-family: 'open_sans-semibold'
-        font-size: 18px
-        text-transform: uppercase
-        margin-left: 65px
-    &__copyr
-        font-size: 16px
-        color: $white
 
 .s__footer__left
     &__title
@@ -278,11 +271,11 @@
         margin-left: 65px
     &__social
         margin-top: 45px
-        margin-left: 65px!important
+        margin-bottom: 26px
         &-item
             margin: 0px 8px
             &:first-child
-                margin-left: 0px
+                margin-left: 65px
 
 .s__footer__policy-title
     font-family: 'open_sans-semibold'
@@ -291,3 +284,20 @@
 .s__footer__policy-text
     font-size: 16px
     margin-bottom: 90px
+
+.s__footer__devstudio
+    margin-left: 65px
+.s__footer__copyr
+    font-size: 16px
+    color: $white
+
+@media (max-width: 768px)
+    .s__footer__devstudio, .s__footer__copyr
+        margin-left: 15px
+        margin-top: 14px
+@media (max-width: 1024px)
+    .s__usluga-title
+        margin-left: 16px
+    .s__usluga-text
+        margin-left: 16px
+        font-size: 20px
