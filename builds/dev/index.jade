@@ -50,8 +50,8 @@ body
                         .frm__agronom__ico.text-center
                             img(src='img/ico/ico_form.png' alt='Садодел - заказать выезд агронома')
                         .frm__agronom__title Оставить заявку на бесплатный выезд агронома
-                        input.frm__agronom__input.frm__agronom__input-name(type='text' placeholder='Ваше имя')
-                        input.frm__agronom__input.frm__agronom__input-phone(type='text' placeholder='Телефон')
+                        input.frm__agronom__input.frm__agronom__input-name#name_frm_agronom(type='text' placeholder='Ваше имя')
+                        input.frm__agronom__input.frm__agronom__input-phone.phonemask#phone_frm_agronom(type='text' placeholder='Телефон')
                         input.frm__agronom__input-submit(type='submit' value='Отправить')
                         .frm__agronom__invite Оставьте заявку и к вам приедет наш специалист-агроном бесплатно
 
@@ -166,9 +166,9 @@ body
                     .container.s__present__form.text-center
                         form.frm__present
                             .col-md-4.col-sm-12
-                                input.frm__present__input.frm__present__input-name(type='text' placeholder='Ваше имя')
+                                input.frm__present__input.frm__present__input-name#name_frm_present(type='text' placeholder='Ваше имя')
                             .col-md-4.col-sm-12
-                                input.frm__present__input.frm__present__input-phone(type='text' placeholder='Телефон')
+                                input.frm__present__input.frm__present__input-phone.phonemask#phone_frm_present(type='text' placeholder='Телефон')
                             .col-md-4.col-sm-12
                                 input.frm__present__input-submit(type='submit' value='Получить подарок')
 
@@ -214,4 +214,5 @@ body
 
     script(src="libs/jquery/jquery.min.js")
     script(src="libs/bootstrap/bootstrap.min.js")
+    script(src="libs/maskedinput/jquery.maskedinput.min.js")
     script(src="js/app.js")
