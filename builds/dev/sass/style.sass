@@ -328,3 +328,50 @@
     .s__usluga-text
         margin-left: 16px
         font-size: 20px
+
+
+// Animate-css Section
+.animated
+    -webkit-animation-duration: 1s
+    animation-duration: 1s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+    &.infinite
+        -webkit-animation-iteration-count: infinite
+        animation-iteration-count: infinite
+    &.hinge
+        -webkit-animation-duration: 2s
+        animation-duration: 2s
+
+@-webkit-keyframes shake
+    from, to
+        -webkit-transform: translate3d(0, 0, 0)
+        transform: translate3d(0, 0, 0)
+
+    10%, 30%, 50%, 70%, 90%
+        -webkit-transform: translate3d(-10px, 0, 0)
+        transform: translate3d(-10px, 0, 0)
+
+    20%, 40%, 60%, 80%
+        -webkit-transform: translate3d(10px, 0, 0)
+        transform: translate3d(10px, 0, 0)
+
+
+@keyframes shake
+    from, to
+        -webkit-transform: translate3d(0, 0, 0)
+        transform: translate3d(0, 0, 0)
+
+    10%, 30%, 50%, 70%, 90%
+        -webkit-transform: translate3d(-10px, 0, 0)
+        transform: translate3d(-10px, 0, 0)
+
+    20%, 40%, 60%, 80%
+        -webkit-transform: translate3d(10px, 0, 0)
+        transform: translate3d(10px, 0, 0)
+
+
+.shake
+    -webkit-animation-name: shake
+        animation-name: shake
+// END of Animate-css Section
